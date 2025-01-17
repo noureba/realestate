@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "./variables";
+@import "./header";
+@import "./heroSection";
+@import "./aboutSection";
+@import "./servicesSection";
+@import "./contactSection";
+@import "./footer";
+
+
+
+*{
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+
+body{
+    margin: auto;
+    max-width: 1500px;
+}

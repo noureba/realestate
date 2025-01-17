@@ -1,0 +1,43 @@
+.servicesSection{
+    padding: 50px 0;
+    background-color: $bg-style-two;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div{
+        margin: 30px  0;
+        text-align: center;
+        h3{
+            font-size: 40px;
+            color: $primary-color;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+            border: 1px solid $primary-color;
+            background-color: $bg-style-one;
+            height: 250px;
+            i{
+                font-size: 60px;
+                color: $primary-color;
+            }
+            h4{
+                margin: 20px 0;
+                font-size: 30px;
+            }
+        }
+    }
+}

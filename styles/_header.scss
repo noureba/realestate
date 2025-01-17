@@ -1,0 +1,56 @@
+header .mobilNav{
+    display: none
+}
+
+header .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-style-one;
+    padding: 15px;
+    color: $primary-color;
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 0 20px;
+            a{
+                color: $primary-color;
+                text-decoration: none;
+                font-size: 16px;
+
+            }
+        }
+    }
+    .toggelBtn{
+        display: none;
+    }
+    .mode{
+        padding: 10px 20px;
+        background-color: $primary-color;
+        color: $bg-style-one;
+        border: none;
+    }
+}
+
+@media (max-width:700px){
+    header .nav ul{
+        display: none;
+    }
+
+    header .nav .toggelBtn{
+        display: block;
+        border: none;
+        font-size: 30px;
+        background-color: $bg-style-one;
+    }
+    header .nav .mode{
+        display: none;
+    }
+
+    header .mobilNav{
+        display: none;
+    }
+}

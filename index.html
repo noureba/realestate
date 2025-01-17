@@ -8,12 +8,13 @@
       src="https://kit.fontawesome.com/abf16bfd3f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <header>
       <div class="nav">
         <a href="#home">
-          <img src="./images/logo.png" alt="logo" />
+          <img src="./images/logo.png" alt="logo" width="150px"/>
         </a>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -21,8 +22,8 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button>active dark mode</button>
-        <button>
+        <button class="mode">active dark mode</button>
+        <button class="toggelBtn">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -44,6 +45,9 @@
       </div>
     </header>
     <section class="heroSection">
+      <div>
+        
+      </div>
       <h3>Find Your Dream Home Today!</h3>
       <p>
         Discover exceptional properties tailored to your lifestyle. Whether
@@ -54,7 +58,7 @@
     </section>
     <section class="aboutSection">
       <div>
-        <img src="./images//realState.jpg" alt="real State" />
+        <img src="./images//realState.jpg" alt="real State" width="400px" />
       </div>
       <div>
         <h3>About us</h3>
@@ -87,7 +91,7 @@
           investing.
         </p>
       </div>
-      <div>
+      <div class="services">
         <div>
           <i class="fa-solid fa-key"></i>
           <h4>Property Sales</h4>
@@ -117,30 +121,30 @@
       </div>
     </section>
     <section class="contactSection">
-      <div>
+      <div class="contact">
         <h3>Contact us</h3>
         <p>
           We’d love to hear from you! Whether you have questions about a
           property
         </p>
       </div>
-      <div>
-        <div>
-          <div>
+      <div class="infoContact">
+        <div >
+          <div class="info">
             <i class="fa-solid fa-location-dot"></i>
             <div>
               <h3>Address:</h3>
               <p>45 High Street, Kensington, London, W8 7HN, United Kingdom</p>
             </div>
           </div>
-          <div>
+          <div class="info">
             <i class="fa-solid fa-phone"></i>
             <div>
               <h3>Phone:</h3>
               <p>+44 20 7946 0123</p>
             </div>
           </div>
-          <div>
+          <div class="info">
             <i class="fa-solid fa-envelope"></i>
             <div>
               <h3>Email:</h3>
@@ -148,7 +152,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="form">
           <form action="">
             <div>
                 <label for="fullName">Full Name</label>
@@ -162,7 +166,7 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
             </div>
-            <input type="submit">
+            <input type="submit" class="submitBtn">
           </form>
         </div>
       </div>

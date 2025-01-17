@@ -1,0 +1,20 @@
+.aboutSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    div{
+        max-width: 600px;
+        padding: 20px;
+        h3{
+            font-size: 40px;
+            color: $primary-color;
+        }
+        p{
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    }
+}
