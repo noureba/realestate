@@ -8,13 +8,14 @@
       src="https://kit.fontawesome.com/abf16bfd3f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="">
     <header>
       <div class="nav">
         <a href="#home">
-          <img src="./images/logo.png" alt="logo" width="150px"/>
+          <img src="./images/logo.png" alt="logo" width="150px" />
         </a>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -22,46 +23,44 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="mode">active dark mode</button>
-        <button class="toggelBtn">
+        <button class="mode">call:+37377600000</button>
+        <button class="toggelBtn" id="toggelBtn">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
-      <div class="mobilNav">
+      <div class="mobilNav hidden">
         <div>
-          <div>
-            <a href="#home">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button>active dark mode</button>
-          </div>
+          <a href="#home">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button>call:+37377600000</button>
         </div>
       </div>
     </header>
     <section class="heroSection">
-      <div>
-        
-      </div>
-      <h3>Find Your Dream Home Today!</h3>
-      <p>
+      <div></div>
+      <h3 data-aos="fade-right">
+        Find Your Dream Home Today!
+      </h3>
+      <p data-aos="fade-left">
         Discover exceptional properties tailored to your lifestyle. Whether
         you're buying, selling, or renting, we make real estate easy and
         stress-free.
       </p>
-      <button>Contact us</button>
+      <button data-aos="fade-right">Contact us</button>
     </section>
     <section class="aboutSection">
-      <div>
+      <div data-aos="fade-right">
         <img src="./images//realState.jpg" alt="real State" width="400px" />
       </div>
-      <div>
-        <h3>About us</h3>
+      <div data-aos="fade-left">
+        <h3 >About us</h3>
         <p>
           we’re passionate about helping you find the perfect property that
           feels like home. Whether you’re buying, selling, or renting, our team
@@ -83,7 +82,7 @@
       </div>
     </section>
     <section class="servicesSection">
-      <div>
+      <div data-aos="fade-up">
         <h3>Our services</h3>
         <p>
           we offer a comprehensive range of real estate services designed to
@@ -91,7 +90,7 @@
           investing.
         </p>
       </div>
-      <div class="services">
+      <div class="services" data-aos="fade-up">
         <div>
           <i class="fa-solid fa-key"></i>
           <h4>Property Sales</h4>
@@ -121,7 +120,7 @@
       </div>
     </section>
     <section class="contactSection">
-      <div class="contact">
+      <div class="contact" data-aos="fade-up">
         <h3>Contact us</h3>
         <p>
           We’d love to hear from you! Whether you have questions about a
@@ -129,7 +128,7 @@
         </p>
       </div>
       <div class="infoContact">
-        <div >
+        <div data-aos="fade-right">
           <div class="info">
             <i class="fa-solid fa-location-dot"></i>
             <div>
@@ -152,29 +151,31 @@
             </div>
           </div>
         </div>
-        <div class="form">
+        <div class="form" data-aos="fade-left">
           <form action="">
             <div>
-                <label for="fullName">Full Name</label>
-                <input type="text" name="fullName">
+              <label for="fullName">Full Name</label>
+              <input type="text" name="fullName" />
             </div>
             <div>
-                <label for="email">Email</label>
-                <input type="email" name="email">
+              <label for="email">Email</label>
+              <input type="email" name="email" />
             </div>
             <div>
-                <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
             </div>
-            <input type="submit" class="submitBtn">
+            <input type="submit" class="submitBtn" />
           </form>
         </div>
       </div>
     </section>
     <footer>
-        <div>
-            <p>All rights reserved, By noureddine</p>
-        </div>
+      <div>
+        <p>All rights reserved, By noureddine</p>
+      </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

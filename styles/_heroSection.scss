@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid red;
   width:100%;
   div {
     background-color: black;
@@ -22,14 +21,17 @@
   h3{
     color: $primary-color;
     z-index: 1;
-    font-size: 60px;
+    font-size: 4rem;
 
   }
   p{
     color: white;
-    margin: 30px 0;
+    margin: 40px 0;
     z-index: 1;
-    font-size: 3opx;
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    max-width: 800px;
+    padding: 10px;
   }
   button{
     z-index: 1;
@@ -37,5 +39,8 @@
     background-color: $bg-style-one;
     color: $primary-color;
     font-size: 20px;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+
   }
 }

@@ -1,5 +1,6 @@
 header .mobilNav{
-    display: none
+    display: none;
+    
 }
 
 header .nav{
@@ -19,7 +20,7 @@ header .nav{
             a{
                 color: $primary-color;
                 text-decoration: none;
-                font-size: 16px;
+                font-size: 18px;
 
             }
         }
@@ -29,6 +30,7 @@ header .nav{
     }
     .mode{
         padding: 10px 20px;
+        font-size: 16px;
         background-color: $primary-color;
         color: $bg-style-one;
         border: none;
@@ -36,6 +38,7 @@ header .nav{
 }
 
 @media (max-width:700px){
+    
     header .nav ul{
         display: none;
     }
@@ -51,6 +54,35 @@ header .nav{
     }
 
     header .mobilNav{
-        display: none;
+        display: block;
+        height: 100vh;
+        background: $bg-style-two;
+        padding: 10px;
+        transition: all 0.5s ease;
+        div{
+            display: flex;
+            flex-direction: column;
+
+            a img{
+                width: 200px;
+            }
+            ul{
+                margin: 10px 0;
+                li{
+                    border-bottom: 1px solid $primary-color;
+                    list-style-type: none;
+                    margin-top: 30px;
+                    a{
+                        text-decoration: none;
+                        color: $primary-color;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    header .hidden{
+        height: 0;
+        
     }
 }
