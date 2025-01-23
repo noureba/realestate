@@ -1,0 +1,96 @@
+header .mobilNav {
+  display: none;
+}
+
+header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-style-one;
+  padding: 15px;
+  color: $primary-color;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 20px;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+  }
+  .toggelBtn {
+    display: none;
+  }
+  .mode {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: $primary-color;
+    color: $bg-style-one;
+    border: none;
+  }
+}
+
+@media (max-width: 700px) {
+  header .nav ul {
+    display: none;
+  }
+
+  header .nav .toggelBtn {
+    display: block;
+    border: none;
+    font-size: 30px;
+    background-color: $bg-style-one;
+  }
+  header .nav .mode {
+    display: none;
+  }
+
+  header .mobilNav {
+    display: block;
+    height: 100vh;
+    background: $bg-style-two;
+    padding: 10px;
+    transition: all 0.5s ease;
+    div {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin: 30px auto;
+        img {
+          width: 200px;
+        }
+      }
+
+      ul {
+        margin: 10px 0;
+        li {
+          border-bottom: 1px solid $primary-color;
+          list-style-type: none;
+          margin-top: 30px;
+          a {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 18px;
+          }
+        }
+      }
+      button {
+        background-color: $primary-color;
+        padding: 20px;
+        font-size: 18px;
+        color: white;
+        border: 1px solid $primary-color;
+        margin: 30px 0;
+      }
+    }
+  }
+  header .hidden {
+    height: 0;
+  }
+}

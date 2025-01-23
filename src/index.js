@@ -1,3 +1,5 @@
+import './styles/styles.scss'
+
 const toggelBtn = document.querySelector('.toggelBtn');
 const nav = document.querySelector('.mobilNav');
 

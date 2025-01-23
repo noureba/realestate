@@ -60,6 +60,9 @@ header .nav .mode {
     display: flex;
     flex-direction: column;
   }
+  header .mobilNav div a {
+    margin: 30px auto;
+  }
   header .mobilNav div a img {
     width: 200px;
   }
@@ -75,6 +78,14 @@ header .nav .mode {
     text-decoration: none;
     color: #c4942e;
     font-size: 18px;
+  }
+  header .mobilNav div button {
+    background-color: #c4942e;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid #c4942e;
+    margin: 30px 0;
   }
   header .hidden {
     height: 0;

@@ -14,7 +14,7 @@ export default [
       'curly': 'error', // Require curly braces for all control statements
       'no-console': 'warn', // Warn on console statements
       'semi': ['error', 'always'], // Require semicolons
-      'quotes': ['error', 'single'], // Enforce single quotes
+      'quotes': ['error', 'duble'], // Enforce single quotes
       'indent': ['error', 2], // Enforce 2-space indentation
       'comma-dangle': ['error', 'always-multiline'], // Require trailing commas in multiline objects and arrays
       'no-trailing-spaces': 'error', // Disallow trailing whitespace
